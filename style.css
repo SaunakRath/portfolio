@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --yellow:#f9ca24;
+    --yellow:#dcf06e;
 }
 
 *{
@@ -372,23 +372,9 @@ header .navbar ul li a:hover{
 
 
 
+  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries  */
 
 @media (max-width:1200px){
 
@@ -457,3 +443,4 @@ header .navbar ul li a:hover{
     }
 
  }
+
