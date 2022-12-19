@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --yellow:#dcf06e;
+    --yellow:#f9ca24;
 }
 
 *{
@@ -18,6 +18,27 @@
     background:var(--yellow);
     color:#333;
 }
+#zoom{
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.baby {
+    margin: 50px;
+    height: 150px;
+    width: 70px;
+    color: #eee;
+    transition: .2s;
+}
+
+.zoom .baby:hover {
+    transform: scale(1.2);
+}
+
+
 
 html{
     font-size: 62.5%;
@@ -276,6 +297,32 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.portfolio .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
 
 .contact .row{
     display: flex;
@@ -346,9 +393,23 @@ header .navbar ul li a:hover{
 
 
 
-  
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
 
 @media (max-width:1200px){
 
@@ -359,6 +420,9 @@ header .navbar ul li a:hover{
     .home{
         padding:1rem 4rem;
     }
+    .portfolio{
+        height: 200vh;
+       }
 
 }
 
@@ -378,6 +442,10 @@ header .navbar ul li a:hover{
 
    body{
        padding:0;
+   }
+
+   .portfolio{
+    height: 300vh;
    }
 
 }
@@ -408,13 +476,15 @@ header .navbar ul li a:hover{
         width:100%;
     }
 
-    .portfolio {
+    .portfolio .box-container .box{
         width:100%;
     }
 
     .contact .row form{
         margin:3rem 0;
     }
+    .portfolio{
+        height: 600vh;
+       }
 
  }
-
