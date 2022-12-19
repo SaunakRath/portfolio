@@ -34,7 +34,7 @@
     transition: .2s;
 }
 
-.zoom .baby:hover {
+.baby:hover {
     transform: scale(1.2);
 }
 
